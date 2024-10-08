@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.box{
+    min-width: 80%;
+    min-height: 80%;
+    border: solid white 4px;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.status{
+    padding-top: 80%;
+    font-size: large;
+}
+
+.scale{
+    width: 90%;
+    height: 90%;
+
+    border-bottom: solid white 2px;
+    border-left: solid white 2px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+}
+
+.bar{
+    width: 1%;
+    background-color: orange;
+
+    border-right: solid black 1px;
+}
+
+.title{
+    color: orange;
+    width: 100%;
+    text-shadow: 
+    2px 2px 0 black,   /* Right and down */
+    -2px 2px 0 black,  /* Left and down */
+    2px -2px 0 black,  /* Right and up */
+    -2px -2px 0 black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    position: relative;
+}
+
+.title2{
+    position: relative;
+    /* left: 60%; */
+    right: 8px;
+    color: lightgreen;
+}
+
+.icon{
+    width: 50px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.sort {
+    color: #FFF;
+    border: 2px solid orange;
+    border-radius: 0px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 lightgreen;
+    transition: ease-out 0.6s;
+    max-width: 140px;
+}
+.slide_right:hover {
+    box-shadow: inset 400px 0 0 0 lightgreen;
+    color: black;
+    font-weight: bolder;
+}
+.sort2 {
+    color: #FFF;
+    border: 2px solid orange;
+    border-radius: 0px;
+    padding: 10px 30px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 orange;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.6s;
+    min-width: 120px;
+}
+.generate:hover{
+    box-shadow: inset 400px 0 0 0 orange;
+    color: black;
+}
